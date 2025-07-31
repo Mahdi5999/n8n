@@ -3,7 +3,7 @@ app.get('/scrape', async (req, res) => {
     const result = await scrapeDivar();
     res.json(result);
   } catch (err) {
-    console.error('❌ Scrape failed:', err); // نمایش جزئیات خطا
+    console.error('Scrape failed:', err); // نمایش جزئیات خطا
     res.status(500).json({ error: err.message || 'Scrape failed' });
   }
 });
