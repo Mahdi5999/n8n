@@ -12,4 +12,6 @@
 }
 "scripts": {
   "start": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false node index.js"
+  "start": "node index.js",
+  "postinstall": "puppeteer install"
 }
