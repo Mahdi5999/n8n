@@ -1,9 +1,10 @@
 {
   "name": "diwar-scraper",
   "version": "1.0.0",
-  "description": "Divar scraper for title, price, and location",
+  "description": "Scraper for Divar listings",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npx puppeteer install",
     "start": "node index.js"
   },
   "dependencies": {
