@@ -3,8 +3,8 @@ const puppeteer = require('puppeteer');
 module.exports = async function scrapeDivar() {
   const browser = await puppeteer.launch({
     headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    executablePath: '/opt/render/.cache/puppeteer/chrome/linux-127.0.6533.88/chrome-linux64/chrome'
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    // ❌ executablePath: حذف شده
   });
 
   const page = await browser.newPage();
